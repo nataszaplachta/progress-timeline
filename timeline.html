@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <style>
+        canvas {
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" height='700px' width='1500px'>
+
+    </canvas>
+</body>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.strokeStyle = 'solid black'
+    ctx.font = '30px Verdana';
+    ctx.textAlign = 'center';
+    ctx.fillText('Start: Listopad 2017', 750, 50);
+
+    x = 750
+    y = 70
+    if (canvas.getContext) {
+        var interval1 = setInterval(drawLine, 15);
+        var ctx = canvas.getContext("2d");
+        function drawLine() {
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            y++;
+            ctx.lineTo(x, y);
+            ctx.strokeStyle = "lightpink";
+            ctx.stroke();
+            if (y == 130) {
+                clearInterval(interval1);
+            }
+        }
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        setTimeout(function () {
+            ctx.strokeStyle = 'solid black'
+            ctx.font = '20px Verdana';
+            ctx.textAlign = 'center';
+            ctx.fillText('Szkolenie z HTML i CSS', 760, 150);
+        }, 1000);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        setTimeout(function () {
+            ctx.strokeStyle = 'solid black'
+            ctx.font = '20px Verdana';
+            ctx.textAlign = 'center';
+            ctx.fillText('Szkolenie z JavaScript', 750, 225)
+        }, 2300);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    var a = 750;
+    var b = 160;
+    if (canvas.getContext) {
+        setTimeout(function () {
+            var interval2 = setInterval(drawLine, 15);
+            var ctx = canvas.getContext("2d");
+            function drawLine() {
+                ctx.beginPath();
+                ctx.moveTo(a, b);
+                b++;
+                ctx.lineTo(a, b);
+                ctx.strokeStyle = "lightpink";
+                ctx.stroke();
+                if (b == 200) {
+                    clearInterval(interval2);
+                }
+            };
+        }, 1300);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    var c = 750;
+    var d = 230;
+    if (canvas.getContext) {
+        setTimeout(function () {
+            var interval3 = setInterval(drawLine, 10);
+            var ctx = canvas.getContext("2d");
+            function drawLine() {
+                ctx.beginPath();
+                ctx.moveTo(c, d);
+                d++;
+                ctx.lineTo(c, d);
+                ctx.strokeStyle = "lightpink";
+                ctx.stroke();
+                if (d == 250) {
+                    clearInterval(interval3);
+                }
+            };
+        }, 2600);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    var e = 750;
+    var f = 250;
+    if (canvas.getContext) {
+        setTimeout(function () {
+            var interval4 = setInterval(drawLine, 05);
+            var ctx = canvas.getContext("2d");
+            function drawLine() {
+                ctx.beginPath();
+                ctx.moveTo(e, f);
+                e--;
+                ctx.lineTo(e, f);
+                ctx.strokeStyle = "lightpink";
+                ctx.stroke();
+                if (e == 400) {
+                    clearInterval(interval4);
+                }
+            };
+        }, 3000);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    var g = 750;
+    var h = 250;
+    if (canvas.getContext) {
+        setTimeout(function () {
+            var interval5 = setInterval(drawLine, 05);
+            var ctx = canvas.getContext("2d");
+            function drawLine() {
+                ctx.beginPath();
+                ctx.moveTo(g, h);
+                g++;
+                ctx.lineTo(g, h);
+                ctx.strokeStyle = "lightpink";
+                ctx.stroke();
+                if (g == 1100) {
+                    clearInterval(interval5);
+                }
+            };
+        }, 3000);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        setTimeout(function () {
+            ctx.strokeStyle = 'solid black'
+            ctx.font = '20px Verdana';
+            ctx.textAlign = 'right';
+            ctx.fillText('Stworzenie kalkulatora w JavaScript', 380, 250)
+            ctx.textAlign = 'left';
+            ctx.fillText('Szkolenie z jQuery', 1115, 250);
+        }, 5000);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    var i = 750;
+    var j = 250;
+    if (canvas.getContext) {
+        setTimeout(function () {
+            var interval6 = setInterval(drawLine, 08);
+            var ctx = canvas.getContext("2d");
+            function drawLine() {
+                ctx.beginPath();
+                ctx.moveTo(i, j);
+                j++;
+                ctx.lineTo(i, j);
+                ctx.strokeStyle = "lightpink";
+                ctx.stroke();
+                if (j == 400) {
+                    clearInterval(interval6);
+                }
+            };
+        }, 5300);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+    if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        setTimeout(function () {
+            ctx.strokeStyle = 'solid black'
+            ctx.font = '20px Verdana';
+            ctx.textAlign = 'center';
+            ctx.fillText('Szkolenie z C#', 750, 420)
+        }, 6500);
+    }
+    else {
+        //canvas nieobslugiwany
+    };
+
+</script>
+
+</html>
